@@ -1,0 +1,120 @@
+---
+import Button from "../components/Button.astro";
+import Textbox from "../components/Textbox.astro";
+import Standard from "../layouts/Standard.astro";
+---
+
+<Standard title="Home">
+	<div class="hero">
+		<h1>A Simple Site Template</h1>
+		<p>Welcome to the sense|making site template.  This can be easily tailored by changing a few CSS variables.</p>
+	</div>
+
+	<section class="contact">
+		<h2>Get in touch!</h2>
+		<div>
+			<Textbox label="Name" placeholder="Devy McDevFace" />
+			<Textbox label="Email" placeholder="devy@example.com" />
+			<Button>I'm in!</Button>
+		</div>
+	</section>
+
+	<section class="colour-a">
+		<h2>Thing A</h2>
+		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident reprehenderit, a unde doloribus voluptates consectetur at veritatis dolor accusamus corrupti?</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora impedit similique omnis suscipit quasi alias quis corporis commodi nihil vel?</p>
+	</section>
+
+	<section class="colour-b">
+		<h2>Thing B</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, cumque. Quisquam, voluptatum. Quasi, cumque. Doloribus, cumque. Quisquam, voluptatum.</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, cumque. Quisquam, voluptatum. Quasi, cumque. Doloribus, cumque. Quisquam, voluptatum.</p>
+	</section>
+
+	<section class="colour-c">
+		<h2>Thing C</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, cumque. Quisquam, voluptatum. Quasi, cumque. Doloribus, cumque. Quisquam, voluptatum.</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, cumque. Quisquam, voluptatum. Quasi, cumque. Doloribus, cumque. Quisquam, voluptatum.</p>
+	</section>
+
+	<section class="colour-d">
+		<h2>Thing D</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, cumque. Quisquam, voluptatum. Quasi, cumque. Doloribus, cumque. Quisquam, voluptatum.</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, cumque. Quisquam, voluptatum. Quasi, cumque. Doloribus, cumque. Quisquam, voluptatum.</p>
+	</section>
+
+	<section class="colour-e">
+		<h2>Thing E</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, cumque. Quisquam, voluptatum. Quasi, cumque. Doloribus, cumque. Quisquam, voluptatum.</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, cumque. Quisquam, voluptatum. Quasi, cumque. Doloribus, cumque. Quisquam, voluptatum.</p>
+	</section>
+
+	<section class="colour-f">
+		<h2>Thing F</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, cumque. Quisquam, voluptatum. Quasi, cumque. Doloribus, cumque. Quisquam, voluptatum.</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, cumque. Quisquam, voluptatum. Quasi, cumque. Doloribus, cumque. Quisquam, voluptatum.</p>
+	</section>
+
+</Standard>
+
+<style>
+	.hero {
+		margin: 3rem 0;
+		text-align: center;
+
+		> h1 {
+			margin-bottom: 2rem;
+		}
+		
+		> * {
+			max-width: 48rem;
+			margin: 0 auto 1rem auto;
+		}
+	}
+
+	section {
+		padding: 1rem 2rem;
+
+		> * {
+			max-width: 48rem;
+			margin: 0 auto 1rem auto;
+		}
+	}
+
+	.contact {
+		> div {
+			display: flex;
+			gap: 1rem;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+	}
+
+	.colour-a {
+		background-color: var(--colour-a);
+	}
+
+	.colour-b {
+		background-color: var(--colour-b);
+		color: var(--colour-base);
+	}
+
+	.colour-c {
+		background-color: var(--colour-c);
+		color: var(--colour-base);
+	}
+
+	.colour-d {
+		background-color: var(--colour-d);
+	}
+
+	.colour-e {
+		background-color: var(--colour-e);
+		color: var(--colour-base);
+	}
+
+	.colour-f {
+		background-color: var(--colour-f);
+		color: var(--colour-base);
+	}
+</style>

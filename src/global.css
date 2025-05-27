@@ -1,0 +1,44 @@
+:root {
+    --colour-base: #191724;
+	--colour-surface: #1f1d2e;
+	--colour-overlay: #26233a;
+	--colour-muted: #6e6a86;
+	--colour-subtle: #908caa;
+	--colour-text: #e0def4;
+	--colour-a: #eb6f92;
+	--colour-b: #f6c177;
+	--colour-c: #ebbcba;
+	--colour-d: #31748f;
+	--colour-e: #9ccfd8;
+	--colour-f: #c4a7e7;
+
+	--astro-code-color-text: var(--colour-text);
+	--astro-code-color-background: var(--colour-surface);
+	--astro-code-token-constant: var(--colour-b);
+	--astro-code-token-string: var(--colour-b);
+	--astro-code-token-comment: var(--colour-subtle);
+	--astro-code-token-keyword: var(--colour-e);
+	--astro-code-token-parameter: var(--colour-f);
+	--astro-code-token-function: var(--colour-c);
+	--astro-code-token-string-expression: var(--colour-d);
+	--astro-code-token-punctuation: var(--colour-muted);
+	--astro-code-token-link: var(--colour-f);
+}
+
+html {
+    font-size: 87.5%;
+}
+
+body {
+    background: var(--colour-base);
+    color: var(--colour-text);
+
+    font-family: system-ui, sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+a {
+    color: var(--colour-text);
+    text-decoration: none;
+}
