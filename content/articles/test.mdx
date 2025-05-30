@@ -138,6 +138,19 @@ This is raw HTML inside Markdown!
 
 ---
 
+```mermaid
+graph TD
+    S((Start)) --> A[Ensure Astro 5.5+]
+    A --> B[Install necessary dependencies]
+    B --> C[Change Astro configuration]
+    C --> D{Need to deploy?}
+    D -- Yes --> E[Make sure Playwright gets installed]
+    D -- No --> F((Finished))
+    E --> F
+```
+
+---
+
 ## Footnotes
 
 Here is a simple footnote[^1].
